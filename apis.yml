@@ -1,24 +1,68 @@
 aid: university-corporation-for-atmospheric-research-ucar
+
 name: University Corporation for Atmospheric Research (UCAR)
-description: 'University Corporation for Atmospheric Research (UCAR) is a company surfaced via the API
-  Evangelist harvest backlog (source: vc-portfolio) and added to the network as a stub for full-pipeline
-  profiling.'
+
+description: "University Corporation for Atmospheric Research (UCAR) is a nonprofit consortium of universities and research institutions dedicated to advancing the atmospheric and Earth system sciences. UCAR operates the National Center for Atmospheric Research (NCAR) and provides a hub for scientific discovery, education, and community programs. Its mission includes supporting member institutions, accelerating research, and delivering data and services that enable scientists to better understand weather, climate, and the environment. UCAR’s public presence includes extensive resources, educational materials, and outreach, though it does not currently expose a public API for its services."
+
 url: https://raw.githubusercontent.com/api-evangelist/university-corporation-for-atmospheric-research-ucar/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+- Research
+- AtmosphericScience
+- Education
+- Nonprofit
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/university-corporation-for-atmospheric-research-ucar-hosts.yml
+- type: Vendors
+  url: vendors/university-corporation-for-atmospheric-research-ucar-vendors.yml
+- type: TermsOfService
+  url: https://www.ucar.edu/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.ucar.edu/privacy-notice
+- type: Newsroom
+  url: https://www.ucar.edu/terms-of-use/media
+- type: Leadership
+  url: https://www.ucar.edu/who-we-are/leadership/ucar-community-programs-ucp-director-search/search-committee
+- type: DomainSecurity
+  url: security/university-corporation-for-atmospheric-research-ucar-domain-security.yml
 - type: Website
   url: http://www.ucar.edu
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: UCAR provides scientific data and education but does not expose a public API.
+  evidence:
+    - url: https://www.ucar.edu
+      status: 200
+  checked: '2026-10-23'
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

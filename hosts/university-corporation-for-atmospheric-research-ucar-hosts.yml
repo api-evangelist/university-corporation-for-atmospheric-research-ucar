@@ -1,0 +1,109 @@
+generated: '2026-10-23'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 8
+  own: 8
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - data
+  - marketing
+  - other
+  - website
+hosts:
+- host: api.ucar.edu
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: ucar.edu
+  role: api
+  relation: own
+- host: data.ucar.edu
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  - well-known
+  types: []
+  serves: []
+  title: Welcome - DASH Search
+  status: 200
+  registrable_domain: ucar.edu
+  role: data
+  relation: own
+- host: ithelp.ucar.edu
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: ucar.edu
+  role: other
+  relation: own
+- host: ncar.ucar.edu
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: ucar.edu
+  role: other
+  relation: own
+- host: news.ucar.edu
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: ucar.edu
+  role: marketing
+  relation: own
+- host: sundog.ucar.edu
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: ucar.edu
+  role: other
+  relation: own
+- host: ucar.edu
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: ucar.edu
+  role: other
+  relation: own
+- host: www.ucar.edu
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  - Newsroom
+  - Leadership
+  - Website
+  serves:
+  - cdn
+  vendor: fastly
+  registrable_domain: ucar.edu
+  role: website
+  relation: own
